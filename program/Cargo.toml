@@ -1,0 +1,17 @@
+[package]
+name = "slippage-program"
+version = "0.0.0"
+edition = "2021"
+readme = "./README.md"
+license-file = "../LICENSE"
+publish = false
+
+[package.metadata.solana]
+program-id = "jamWbgUbNYxFqXu8JNaHoZaZg9TekvPPEFsGMx5oiXF"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+bytemuck = "^1.16"
+pinocchio = { version="^0", features=["macro"], git="https://github.com/febo/pinocchio.git" }

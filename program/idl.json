@@ -1,0 +1,38 @@
+{
+  "version": "0.0.1",
+  "name": "slippage_program",
+  "instructions": [
+    {
+      "name": "Assert",
+      "accounts": [
+        {
+          "name": "tokenAccount",
+          "isMut": false,
+          "isSigner": false,
+          "docs": [
+            "Token account to assert the amount"
+          ]
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 0,
+      "name": "SlippageExceeded",
+      "msg": "Slippage exceeded"
+    }
+  ],
+  "metadata": {
+    "origin": "shank",
+    "address": "jamWbgUbNYxFqXu8JNaHoZaZg9TekvPPEFsGMx5oiXF",
+    "binaryVersion": "0.3.0",
+    "libVersion": "0.3.0"
+  }
+}
